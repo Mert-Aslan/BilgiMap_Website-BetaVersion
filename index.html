@@ -90,6 +90,7 @@
 
         <div class="blur-overlay-login" id="blur-overlay-login">
           <div class="login-container" id="login-container">
+            <button class="close-login" id="close-btn-login" >&times;</button>
             <div class="login-logo-container">
               <img src="logos/logo-website.png" class="login-logo">
             </div>
@@ -109,7 +110,10 @@
                 </label>
                   <a href="#">Forgot Password?</a>
               </div>
-              <button type="submit" class="loginbtn">Login</button>
+              <div class="loginbtn-container">
+                <button type="submit" class="loginbtn">Login</button>
+              </div>
+              
               <div class = "register_link">
                 <p>Don't have an account?<a href='#'>Register</a></p>
               </div>
@@ -119,7 +123,18 @@
 
          <!--About Page-->
 
-
+        <div class="blur-overlay-about" id="blur-overlay-about">
+          <div  class="about-container" id="about-container" >
+            <button class="close-about" id="close-btn-about" >&times;</button>
+            <div class="about-title">
+              <h1 class="h1-bilgiabout">About BILGI</h1>
+              <h1 class="h1-mapabout">MAP</h1>
+            </div>
+            <div class="content-container">
+              <p class="content"></p>
+            </div>
+          </div>
+        </div>
       
           
 
@@ -358,25 +373,43 @@
     <script>
       document.addEventListener('DOMContentLoaded', function() {
 
-        const overlay = document.getElementById('blur-overlay-login');
+        const overlaylogin = document.getElementById('blur-overlay-login');
+        const overlayabout = document.getElementById('blur-overlay-about')
         const body = document.body;
-        const loginPage = document.getElementById('login-container');
         let isPageOpen = false;
 
         document.getElementById('loginbutton').addEventListener('click', function() {
 
             // Show the blurred overlay
-            overlay.style.display = 'flex';
-            console.log(overlay.style.display)
+            overlaylogin.style.display = 'flex';
 
             
             // Disable scrolling
             body.style.overflow = 'hidden';
 
             isPageOpen=true;
-         
-
         });
+
+        document.getElementById('close-btn-login').addEventListener('click',function(){
+
+          overlaylogin.style.display='none';
+          body.style.overflow = 'auto';
+          isPageOpen=false;
+
+        })
+
+        document.getElementById('about-btn').addEventListener('click',function(){
+          overlayabout.style.display='flex';
+          body.style.overflow='hidden'
+        })
+
+        document.getElementById('close-btn-about').addEventListener('click',function(){
+
+          overlayabout.style.display='none';
+          body.style.overflow = 'auto';
+
+        })
+
     });
     </script>
 

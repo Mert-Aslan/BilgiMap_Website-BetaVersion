@@ -23,10 +23,34 @@
 }
 
 html{
-  scroll-behavior: smooth;
+  scroll-behavior:smooth;
 }
 body{
   margin: 0;
+}
+
+.close-login, .close-about{
+  font-size: 45px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  border-radius: 360px;
+  background-color: black;
+  border: none;
+  display: block;
+  margin-left: auto;
+  
+}
+
+.close-login:hover, .close-about:hover{
+  background-color: #ebe8e8;
+  color: rgb(177,50,37);
+  transition: 0.3s;
+}
+
+.close-login{
+  margin: 5% 5% 0 0 ;
+  margin-left: auto;
 }
 
 .feature-card-feature-card {
@@ -56,29 +80,37 @@ body{
 }
 
 .login-container{
-  width: 430px;
-  padding: 80px 40px;
+  width: 40%;
+  height: 90%;
   border: 2px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background: rgb(177,50,37);
+  background: #ebe8e8;
   border-radius: 40px;
   font-family: Roboto;
 }
 
 
 .login-logo-container{
+  display: flex;
+
+  width: 100%;
+  justify-content: center;
+  height: 103.91px;
+}
+
+.about-logo-container{
+  display: flex;
   width: 430px;
   height: 103.91px;
   position: relative;
+  justify-content: center;
 }
 
+
 .login-logo{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 120px;
-  height: 103.91px;
+  display: flex;
+  height:100%;
+  width: 27%;
 }
 
 .login-container h1{
@@ -101,34 +133,35 @@ body{
   height: 50px;
   border: 2px solid rgba(0, 0, 0, 0.1);
   outline: none;
+  background-color: rgb(177,50,37);
   border-radius: 40px;
   font-size: 20px;
-  color: black;
+  color: white;
   padding: 15px;
   transition: all 0.4s;
 }
 
 .inputBox input::placeholder{
-  color: rgba(6, 35, 57, 0.5);
+  color: #ebe8e8
 }
 .inputBox input:focus{
   border: 2px solid rgba(6, 35, 57, 0.5);
 }
 
-.logo-container .remember_forgot{
-  display: flex;
-  justify-content: space-between;
-  font-size: 14px;
-  margin: 15px 15px 100px;
-}
+
 
 .remember_forgot label input{
   color: #ffffff;
   margin-right: 3px;
 }
 
+.login-checkbox{
+  margin-left: 5%;
+}
+
 .remember_forgot a{
-  color:white;
+  color:rgb(177,50,37);
+  font-family: Roboto;
   text-decoration: none;
 }
 
@@ -136,14 +169,21 @@ body{
   text-decoration: underline;
 }
 
-.login-container .loginbtn{
-  width: 100%;
+.loginbtn-container{
+  display: flex;
   height: 45px;
+  justify-content: center;
+}
+
+.login-container .loginbtn{
+  width: 70%;
+  height: 100%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   cursor: pointer;
   font-size: 16px;
-  font-weight: 600;
-  color: #222;
+  font-weight: bold;
+  color: #ebe8e8;
+  background-color: rgb(177,50,37);
   border: none;
   outline: none;
   border-radius: 40px;
@@ -183,6 +223,61 @@ body{
 .login-container .login-checkbox{
   accent-color: black;
 }
+
+.blur-overlay-about{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  backdrop-filter: blur(7px);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.about-container{
+  width: 70%;
+  height: 75%;
+  border-radius: 45px;
+  
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-image: url(img/img-about-bckgrnd.png);
+  background-size: 100% 100%;
+  border-radius: 40px;
+  font-family: Roboto;
+}
+
+.close-about{
+  margin: 3% 3% 0 0;
+  margin-left: auto;
+}
+
+
+.about-logo-container{
+  margin: 0 auto;
+  display:flex;
+}
+
+.about-title{
+  display: flex;
+  position:relative;
+  justify-content: center;
+}
+
+.h1-bilgiabout{
+  color: white;
+  font-family: Roboto;
+}
+
+.h1-mapabout{
+  color: #fc0303;
+  font-family: Roboto;
+}
+
 
 .logo-small{
   width: 40px;
@@ -265,7 +360,7 @@ body{
 .home-navbar-interactive {
   width: 90%;
   display: flex;
-  position: sticky;
+  position:sticky;
   max-width: var(--dl-size-size-maxwidth);
   align-items: center;
   padding-top: var(--dl-space-space-oneandhalfunits);
