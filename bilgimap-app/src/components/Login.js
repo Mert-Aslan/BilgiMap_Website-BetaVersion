@@ -1,16 +1,24 @@
 import React from "react";
 import "../components/Common.css";
+import {  useNavigate } from "react-router-dom";
 
-export default function Login({ onClose }) {
-  const close = () => {
+export default function Login() {
+
+  const navigate = useNavigate()
+  const routeCange = (path) => {
+    navigate(path)
+  }
+
+  const closeLogin = () => {
     document.body.style.flexFlow = "auto"
-    onClose()
+    routeCange("/");
+    window.location.reload(true)
   }
 
   return (
     <div class="blur-overlay-login" id="blur-overlay-login">
       <div class="login-container" id="login-container">
-        <button class="close-login" id="close-btn-login" onClick={ close } >&times;</button>
+        <button class="close-login" id="close-btn-login" onClick={closeLogin}>&times;</button>
         <div class="login-logo-container">
           <img src="logos/logo-website.png" class="login-logo" />
         </div>

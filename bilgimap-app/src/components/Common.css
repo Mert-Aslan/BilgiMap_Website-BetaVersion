@@ -66,6 +66,7 @@ body{
 }
 
 .blur-overlay-login{
+  
   display: flex;
   position: fixed;
   top: 0;
@@ -87,6 +88,7 @@ body{
   background: #ebe8e8;
   border-radius: 40px;
   font-family: Roboto;
+  overflow-y: scroll;
 }
 
 
@@ -225,7 +227,7 @@ body{
 }
 
 .blur-overlay-about{
-  display: none;
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
@@ -236,6 +238,7 @@ body{
   justify-content: center;
   align-items: center;
   z-index: 1000;
+    
 }
 
 .about-container{
