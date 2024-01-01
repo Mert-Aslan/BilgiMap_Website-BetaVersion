@@ -1395,3 +1395,9 @@ body{
     flex-direction: column;
     justify-content: space-between;
   }}
+
+  .btn-featurecard {
+    padding: 0;
+    border-radius: var(--dl-radius-radius-radius8) ;
+    border: none;
+  }

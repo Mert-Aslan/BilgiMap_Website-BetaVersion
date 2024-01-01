@@ -68,43 +68,52 @@ export default function Body() {
                             </span>
                         </div>
                         <div class="home-container04">
-                            <div class="feature-card-feature-card">
-                                <img src={energy_museum} class="logo-small" />
-                                <div class="feature-card-container">
-                                    <h3 class="feature-card-text-heading3">
-                                        <span>Energy Museum</span>
-                                    </h3>
+                            <button class="btn-featurecard">
+                                <div class="feature-card-feature-card">
+                                    <img src={energy_museum} class="logo-small" />
+                                    <div class="feature-card-container">
+                                        <h3 class="feature-card-text-heading3">
+                                            <span>Energy Museum</span>
+                                        </h3>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="feature-card-feature-card">
-                                <img src={building_info} class="logo-small" />
-                                <div class="feature-card-container">
-                                    <h3 class="feature-card-text-heading3">
-                                        <span>Building Information</span>
-                                    </h3>
+                            </button>
+
+                            <button class="btn-featurecard">
+                                <div class="feature-card-feature-card">
+                                    <img src={building_info} class="logo-small" />
+                                    <div class="feature-card-container">
+                                        <h3 class="feature-card-text-heading3">
+                                            <span>Building Information</span>
+                                        </h3>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="feature-card-feature-card">
-                                <img src={study_places} class="logo-small" />
-                                <div class="feature-card-container">
-                                    <h3 class="feature-card-text-heading3">
-                                        <span>Study Places</span>
-                                    </h3>
+                            </button>
+                            <button class="btn-featurecard">
+                                <div class="feature-card-feature-card">
+                                    <img src={study_places} class="logo-small" />
+                                    <div class="feature-card-container">
+                                        <h3 class="feature-card-text-heading3">
+                                            <span>Study Places</span>
+                                        </h3>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="feature-card-feature-card">
-                                <img src={food_drinks} class="logo-small" />
-                                <div class="feature-card-container">
-                                    <h3 class="feature-card-text-heading3">
-                                        <span>Food & Drinks</span>
-                                    </h3>
+                            </button>
+                            <button class="btn-featurecard">
+                                <div class="feature-card-feature-card">
+                                    <img src={food_drinks} class="logo-small" />
+                                    <div class="feature-card-container">
+                                        <h3 class="feature-card-text-heading3">
+                                            <span>Food & Drinks</span>
+                                        </h3>
+                                    </div>
                                 </div>
-                            </div>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
             <div class="home-gallery">
                 <div class="home-gallery1">
                     <h1 class="home-gallery-heading heading2">Explore Our Campus</h1>
