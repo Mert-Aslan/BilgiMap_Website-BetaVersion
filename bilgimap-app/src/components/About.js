@@ -9,8 +9,7 @@ export default function About() {
 
   const closeAbout = () => {
     routeCange("/")
-    document.body.style.flexFlow = "auto"
-    window.location.reload(true)
+    document.body.style.overflow = "auto"
   }
   return (
     <div class="blur-overlay-about" id="blur-overlay-about">

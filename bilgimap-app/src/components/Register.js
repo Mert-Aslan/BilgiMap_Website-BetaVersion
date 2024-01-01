@@ -43,8 +43,7 @@ export default function Register() {
     const closeRegister = () => {
         
         routeCange("/")
-        document.body.style.flexFlow = "auto"
-        //window.location.reload(true)
+        document.body.style.overflow = "auto"
     }
 
     return (

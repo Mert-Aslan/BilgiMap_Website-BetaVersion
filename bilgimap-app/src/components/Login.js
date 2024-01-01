@@ -39,9 +39,8 @@ export default function Login() {
   }
 
   const closeLogin = () => {
-    document.body.style.flexFlow = "auto"
+    document.body.style.overflow = "auto"
     routeCange("/");
-    window.location.reload(true)
   }
 
   return (

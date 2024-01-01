@@ -29,12 +29,16 @@ body{
   margin: 0;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .close-login, .close-about{
-  font-size: 45px;
+  font-size: 35px;
   cursor: pointer;
   font-weight: bold;
   color: white;
-  border-radius: 360px;
+  border-radius: 10px;
   background-color: black;
   border: none;
   display: block;
@@ -81,12 +85,12 @@ body{
 }
 
 .login-container{
-  width: 40%;
-  height: 90%;
+  width: 25%;
+  height: 80%;
   border: 2px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background: #ebe8e8;
-  border-radius: 40px;
+  border-radius: 25px;
   font-family: Roboto;
   overflow-y: scroll;
 }
@@ -94,10 +98,10 @@ body{
 
 .login-logo-container{
   display: flex;
-
   width: 100%;
   justify-content: center;
-  height: 103.91px;
+  height: 15vh;
+  align-items:end;
 }
 
 .about-logo-container{
@@ -111,32 +115,36 @@ body{
 
 .login-logo{
   display: flex;
-  height:100%;
+  height:80%;
   width: 27%;
 }
 
 .login-container h1{
-  font-size: 36px;
+  font-size: 33px;
   color: black;
   font-weight: bolder;
-  text-align: center;
+  text-align:center;
   text-transform: uppercase;
-  font-family: 'Times New Roman';
+  font-family: Rubik;
+  margin: 1.5vh 0 1.5vh 0;
 }
 
 .login-container .inputBox{
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 1.5vh;
+  height: 7vh;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .inputBox input{
-  width: 85%;
-  height: 50px;
+  width: 70%;
+  height: 40%;
   border: 2px solid rgba(0, 0, 0, 0.1);
   outline: none;
   background-color: rgb(177,50,37);
-  border-radius: 40px;
+  border-radius: 20px;
   font-size: 20px;
   color: white;
   padding: 15px;
@@ -149,7 +157,6 @@ body{
 .inputBox input:focus{
   border: 2px solid rgba(6, 35, 57, 0.5);
 }
-
 
 
 .remember_forgot label input{
