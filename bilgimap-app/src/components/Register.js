@@ -57,17 +57,17 @@ export default function Register() {
                 <h1>Register</h1>
                 <form onSubmit={registerUser}>
                     <div class="inputBox">
-                        <input type="text" placeholder="Name" required value={data.name} onChange={(e) => setData({...data, name: e.target.value})}/>
+                        <input type="text" placeholder="Name"  value={data.name} onChange={(e) => setData({...data, name: e.target.value})}/>
                     </div>
                     <div class="inputBox">
-                        <input type="text" placeholder="Last Name" required value={data.lastname} onChange={(e) => setData({...data, lastname: e.target.value})}/>
+                        <input type="text" placeholder="Last Name"  value={data.lastname} onChange={(e) => setData({...data, lastname: e.target.value})}/>
                     </div>
                     <div class="inputBox">
-                        <input type="email" placeholder="Mail" required value={data.email} onChange={(e) => setData({...data, email: e.target.value})}/>
+                        <input type="email" placeholder="Mail"  value={data.email} onChange={(e) => setData({...data, email: e.target.value})}/>
                     </div>
 
                     <div class="inputBox">
-                        <input type="password" placeholder="Password" required value={data.password} onChange={(e) => setData({...data, password: e.target.value})}/>
+                        <input type="password" placeholder="Password"  value={data.password} onChange={(e) => setData({...data, password: e.target.value})}/>
                     </div>
 
                     <div class="loginbtn-container">
