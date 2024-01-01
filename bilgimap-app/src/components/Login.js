@@ -1,8 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import "../components/Common.css";
 import {  useNavigate } from "react-router-dom";
+import axios from "axios"
+import { toast } from "react-hot-toast";
 
 export default function Login() {
+
+  const [data, setData] = useState({
+    email: "",
+    password: ""
+  })
+
+  const loginUser = async (e) => {
+    e.preventDefault()
+    const {email, password} = data
+    try {
+      const {data} = await axios.post("/login",{
+        email,password
+      })
+
+      if(data.error){
+        toast.error(data.error)
+      }else{
+        setData({})
+        toast.success("Login succesful")
+        routeCange("/")
+      }
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
 
   const navigate = useNavigate()
   const routeCange = (path) => {
@@ -23,13 +51,14 @@ export default function Login() {
           <img src="logos/logo-website.png" class="login-logo" />
         </div>
         <h1>Login</h1>
-        <form action="">
+        <form onSubmit={loginUser}>
+
           <div class="inputBox">
-            <input type="email" placeholder="Mail" required />
+            <input type="email" placeholder="Mail" required value={data.email} onChange={(e) => setData({...data, email: e.target.value})} />
           </div>
 
           <div class="inputBox">
-            <input type="password" placeholder="Password" required />
+            <input type="password" placeholder="Password" required value={data.password} onChange={(e) => setData({...data, password: e.target.value})}/>
           </div>
 
           <div class="remember_forgot">
@@ -43,7 +72,7 @@ export default function Login() {
           </div>
 
           <div class="register_link">
-            <p>Don't have an account?<a href='#'>Register</a></p>
+            <p>Don't have an account?<a href='/register'>Register</a></p>
           </div>
         </form>
       </div>
