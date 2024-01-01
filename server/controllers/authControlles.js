@@ -37,7 +37,7 @@ const registerUser = async (req, res) => {
         }
         //Create user in Database
         const hashedPassword = hashPassword(password)
-        const user = User.create({ name, lastname, email, password : hashedPassword })
+        const user = User.create({ name, lastname, email, password})
         return res.json(user)
 
     } catch (error) {
@@ -60,7 +60,7 @@ const loginUser = async (req, res) => {
 
         //check if passwords match
         const match = await comparePassword(password, user.password);
-        if(match){
+        if(password == user.password){
             res.json("password match")
         }
 

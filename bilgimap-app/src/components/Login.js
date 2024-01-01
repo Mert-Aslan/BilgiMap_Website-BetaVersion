@@ -3,6 +3,7 @@ import "../components/Common.css";
 import {  useNavigate } from "react-router-dom";
 import axios from "axios"
 import { toast } from "react-hot-toast";
+import website_logo from "./logos/logo-website.png"
 
 export default function Login() {
 
@@ -48,7 +49,7 @@ export default function Login() {
       <div class="login-container" id="login-container">
         <button class="close-login" id="close-btn-login" onClick={closeLogin}>&times;</button>
         <div class="login-logo-container">
-          <img src="logos/logo-website.png" class="login-logo" />
+          <img src={website_logo} class="login-logo" />
         </div>
         <h1>Login</h1>
         <form onSubmit={loginUser}>
