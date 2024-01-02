@@ -8,6 +8,7 @@ import Login from "./components/Login"
 import Register from "./components/Register"
 import axios from "axios"
 import {Toaster} from "react-hot-toast"
+import LogoSection from "./components/LogoSection"
 
 axios.defaults.baseURL = "http://localhost:8000/"
 axios.defaults.withCredentials = true
@@ -23,9 +24,8 @@ export default function Main(){
                 <Route path="/about" element = {<About />}/>
             </Routes>
             <Body />
-            <Footer />
+            <LogoSection />
+            <Footer />      
         </BrowserRouter>
-        
-
     )
 }

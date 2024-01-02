@@ -7,7 +7,10 @@ export default function Footer(){
           <footer class="home-footer1">
             <div class="home-container11">
               <span class="home-logo2">BILGIMAP</span>
-              <nav class="home-nav1">
+            </div>
+
+            <div>
+            <nav class="home-nav1">
                 <span class="home-nav12">Home</span>
                 <span class="home-nav22">About</span>
                 <span class="home-nav32">Campus Map</span>
@@ -18,7 +21,7 @@ export default function Footer(){
             <div class="home-separator"></div>
             <div class="home-container12">
               <span class="home-text10">
-                © 2023 myCompany, All Rights Reserved.
+                © 2023 BILGIMAP, All Rights Reserved.
               </span>
               <div class="home-icon-group1">
                 <svg viewBox="0 0 950.8571428571428 1024" class="home-icon10">
