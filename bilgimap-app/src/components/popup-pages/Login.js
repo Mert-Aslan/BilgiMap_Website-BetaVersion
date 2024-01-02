@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import "../components/Common.css";
+import "../Common.css";
 import {  useNavigate } from "react-router-dom";
 import axios from "axios"
 import { toast } from "react-hot-toast";
-import website_logo from "./logos/logo-website.png"
+import website_logo from "../logos/logo-website.png"
 
 export default function Login() {
 
