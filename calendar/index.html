@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <title>Calendar</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="evo-calendar.min.css">
+    <!-- <link rel="stylesheet" href="evo-calendar.midnight-blue.min.css"> -->
+    <link rel="stylesheet" href="evo-calendar.orange-coral.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    
+    <div class="hero">
+        
+        <div id="calendar"></div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script> 
+    <script src="evo-calendar.min.js"></script>
+    <script>
+
+        $(document).ready(function() {
+            $('#calendar').evoCalendar({
+
+                theme: "Orange Coral",
+                // THIS PART IS FOR TAKING DATA AND SHOWING ON THE FRONTEND PART
+                calendarEvents: [
+                    {
+                        id: 'NewYear', // Event's ID (required)
+                        name: "New Year", // Event name (required)
+                        date: "January/1/2020", // Event date (required)
+                        description: "Happy new year!!!",
+                        type: "holiday", // Event type (required)
+                        everyYear: true // Same event every year (optional)
+                    },
+                    {
+                        name: "Vacation Leave",
+                        badge: "02/13 - 02/15", // Event badge (optional)
+                        date: ["February/13/2024", "February/15/2024"], // Date range
+                        description: "Vacation leave for 3 days.", // Event description (optional)
+                        type: "event",
+                        color: "#63d867" // Event custom color (optional)
+                    }
+                ]
+            })
+        })
+
+    </script>
+
+</body>
+
+
+<html>
