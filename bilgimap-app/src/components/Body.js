@@ -10,8 +10,8 @@ import { useNavigate } from "react-router-dom"
 
 export default function Body() {
     const navigate = useNavigate();
-    
-    
+
+
 
     return (
         <>
@@ -75,7 +75,7 @@ export default function Body() {
                         <div class="home-container04">
                             <button class="btn-featurecard" onClick={() => {
                                 document.body.style.overflow = "hidden"
-                                navigate("/enery-museum")
+                                navigate("/energy-museum")
 
                             }}>
                                 <div class="feature-card-feature-card">
@@ -105,7 +105,6 @@ export default function Body() {
                             <button class="btn-featurecard" onClick={() => {
                                 document.body.style.overflow = "hidden"
                                 navigate("/study-places")
-
                             }}>
                                 <div class="feature-card-feature-card">
                                     <img src={study_places} class="logo-small" />

@@ -1,7 +1,5 @@
 import "../Common.css"
 import {  useNavigate } from "react-router-dom";
-import Login from "./Login";
-
 export default function EnergyMuseum() {
     const navigate = useNavigate()
     const closeLogin = () => {
@@ -10,7 +8,7 @@ export default function EnergyMuseum() {
     }
     return (
         <div>
-            <Login />
+            EnergyMuseum
         </div>
     )
 }
