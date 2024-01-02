@@ -9,8 +9,11 @@ export default function Navbar() {
   }
 
   return (
+
+
     <div class="home-header">
-      <header data-thq="thq-navbar" class="home-navbar-interactive" id="home">
+      <div id="home"></div>
+      <header data-thq="thq-navbar" class="home-navbar-interactive">
         <div data-thq="thq-navbar-nav" class="home-desktop-menu">
           <a class="logo-container" href="#home">
             <span class="home-logo-bilgi">
@@ -27,7 +30,7 @@ export default function Navbar() {
             <a class="home-nav2" id="about-btn" href="/about" onClick={() => document.body.style.overflow = "hidden"}>About</a>
             <a class="home-nav3">Campus Map</a>
             <a class="home-nav4" href="#features">Features</a>
-            <a class="home-nav5">Contact</a>
+            <a class="home-nav5" href="#contact">Contact</a>
           </nav>
           <div class="home-buttons">
             <button class="home-login" onClick={() => {

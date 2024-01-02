@@ -10,7 +10,6 @@ export default function StudyPlaces(){
 
     return(
         <div>
-            Study Place
         </div>
     )
 }
