@@ -76,7 +76,6 @@ export default function Body() {
                             <button class="btn-featurecard" onClick={() => {
                                 document.body.style.overflow = "hidden"
                                 navigate("/energy-museum")
-
                             }}>
                                 <div class="feature-card-feature-card">
                                     <img src={energy_museum} class="logo-small" />
@@ -136,12 +135,12 @@ export default function Body() {
 
             <div class="home-gallery">
                 <div class="home-gallery1">
-                    <h1 class="home-gallery-heading heading2">Explore Our Campus</h1>
+                    <h1 class="home-gallery-heading-heading2">Explore Our Campus</h1>
                     <span class="home-gallery-sub-heading">
                         Take a virtual tour of our university campus
                     </span>
                     <div class="home-container10">
-                        <div class="gallery-card3-gallery-card gallery-card3-root-class-name">
+                        <div class="gallery-card3-gallery-card">
                             <img
                                 alt="image"
                                 src="https://move2turkey.com/wp-content/uploads/2020/12/All-you-need-to-know-about-the-Turkish-Private-Bilgi-University-in-Istanbul2.jpg"
@@ -149,7 +148,7 @@ export default function Body() {
                             />
                         </div>
                         <div
-                            class="gallery-card3-gallery-card gallery-card3-root-class-name1"
+                            class="gallery-card3-gallery-card"
                         >
                             <img
                                 alt="image"
@@ -158,7 +157,7 @@ export default function Body() {
                             />
                         </div>
                         <div
-                            class="gallery-card3-gallery-card gallery-card3-root-class-name3"
+                            class="gallery-card3-gallery-card"
                         >
                             <img
                                 alt="image"
@@ -167,38 +166,11 @@ export default function Body() {
                             />
                         </div>
                         <div
-                            class="gallery-card3-gallery-card gallery-card3-root-class-name2"
+                            class="gallery-card3-gallery-card"
                         >
                             <img
                                 alt="image"
                                 src="https://i.pinimg.com/originals/54/cd/2f/54cd2fb6a586d2c14f5e9194b6b521a0.jpg"
-                                class="gallery-card3-image"
-                            />
-                        </div>
-                        <div
-                            class="gallery-card3-gallery-card gallery-card3-root-class-name4"
-                        >
-                            <img
-                                alt="image"
-                                src="https://2.bp.blogspot.com/-Z8Ht6DSS-Z0/U5yJE2NvTYI/AAAAAAAAiVM/N4lZi39x_Rs/w1200-h630-p-k-no-nu/santralistanbulMeydan06.jpg"
-                                class="gallery-card3-image"
-                            />
-                        </div>
-                        <div
-                            class="gallery-card3-gallery-card gallery-card3-root-class-name5"
-                        >
-                            <img
-                                alt="image"
-                                src="https://th.bing.com/th/id/OIP.HzfxwVBp-I6fs-7z9pbImAHaF3?w=1000&h=793&rs=1&pid=ImgDetMain"
-                                class="gallery-card3-image"
-                            />
-                        </div>
-                        <div
-                            class="gallery-card3-gallery-card gallery-card3-root-class-name7"
-                        >
-                            <img
-                                alt="image"
-                                src="https://images.divisare.com//images/c_limit,f_auto,h_2000,q_auto,w_3000/v1465299112/ila5k02lsrztynyoscqs/nevzat-sayin-istanbul-bilgi-university-architecture-faculty.jpg"
                                 class="gallery-card3-image"
                             />
                         </div>
