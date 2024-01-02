@@ -65,6 +65,9 @@ export default function Login() {
             <label>
               <input type="checkbox" class="login-checkbox" />Remember me
             </label>
+          </div>
+
+          <div class="forgot_btn">
             <a href="#">Forgot Password?</a>
           </div>
           <div class="loginbtn-container">

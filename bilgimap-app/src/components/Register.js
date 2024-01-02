@@ -47,11 +47,11 @@ export default function Register() {
     }
 
     return (
-        <div class="blur-overlay-login" id="blur-overlay-login">
-            <div class="login-container" id="login-container">
-                <button class="close-login" id="close-btn-login" onClick={closeRegister}>&times;</button>
-                <div class="login-logo-container">
-                    <img src={website_logo} class="login-logo" />
+        <div class="blur-overlay-register" >
+            <div class="register-container" >
+                <button class="close-login"  onClick={closeRegister}>&times;</button>
+                <div class="register-logo-container">
+                    <img src={website_logo} class="register-logo" />
                 </div>
                 <h1>Register</h1>
                 <form onSubmit={registerUser}>
@@ -69,8 +69,8 @@ export default function Register() {
                         <input type="password" placeholder="Password"  value={data.password} onChange={(e) => setData({...data, password: e.target.value})}/>
                     </div>
 
-                    <div class="loginbtn-container">
-                        <button type="submit" class="loginbtn">Register</button>
+                    <div class="registerbtn-container">
+                        <button type="submit" class="registerbtn">Register</button>
                     </div>
 
                 </form>

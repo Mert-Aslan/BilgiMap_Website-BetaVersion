@@ -69,6 +69,12 @@ body{
   background-color: var(--dl-color-gray-white);
 }
 
+.feature-card-feature-card:hover{
+  transition: 0.3s;
+  background-color: black;
+  color: var(--dl-color-gray-white);
+}
+
 .blur-overlay-login{
   
   display: flex;
@@ -86,7 +92,7 @@ body{
 
 .login-container{
   width: 25%;
-  height: 80%;
+  height: 65%;
   border: 2px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background: #ebe8e8;
@@ -100,7 +106,7 @@ body{
   display: flex;
   width: 100%;
   justify-content: center;
-  height: 15vh;
+  height: 13vh;
   align-items:end;
 }
 
@@ -158,24 +164,34 @@ body{
   border: 2px solid rgba(6, 35, 57, 0.5);
 }
 
+.remember_forgot{
+  display: inline;
+  margin-left: 7vh;
+}
 
 .remember_forgot label input{
   color: #ffffff;
-  margin-right: 3px;
+  margin-right: 0.5vh;
 }
 
 .login-checkbox{
-  margin-left: 5%;
+  margin-left: 0.2vh;
 }
 
-.remember_forgot a{
-  color:rgb(177,50,37);
-  font-family: Roboto;
+.forgot_btn a{
+  color:black;
+  font-family: Rubik;
   text-decoration: none;
 }
 
-.remember_forgot a:hover{
+.forgot_btn a:hover{
   text-decoration: underline;
+}
+
+.forgot_btn{
+  display: inline-block;
+  margin-left: 9vh;
+
 }
 
 .loginbtn-container{
@@ -208,7 +224,9 @@ body{
 }
 
 .login-container .loginbtn:active{
-  transform: translateY(0px);
+  transition: 0.15s;
+  background-color: #ebe8e8;
+  color: black;
 }
 
 .login-container .register_link{
@@ -220,6 +238,7 @@ body{
 .register_link p a{
   margin-left: 5px;
   color:black;
+  font-family: Rubik;
   text-transform: uppercase;
   font-weight: bold;
   text-decoration: none;
@@ -231,6 +250,99 @@ body{
 
 .login-container .login-checkbox{
   accent-color: black;
+}
+
+.blur-overlay-register{
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  backdrop-filter: blur(7px);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.register-container{
+  width: 25%;
+  height: 80%;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: #ebe8e8;
+  border-radius: 25px;
+  font-family: Roboto;
+  overflow-y: scroll;
+}
+
+.register-logo-container{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 15vh;
+  align-items:end;
+}
+
+.register-logo{
+  display: flex;
+  height:80%;
+  width: 27%;
+}
+
+.register-container h1{
+  font-size: 33px;
+  color: black;
+  font-weight: bolder;
+  text-align:center;
+  text-transform: uppercase;
+  font-family: Rubik;
+  margin: 1.5vh 0 1.5vh 0;
+}
+
+.register-container .inputBox{
+  position: relative;
+  margin-bottom: 1.5vh;
+  height: 7vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.registerbtn-container{
+  display: flex;
+  height: 45px;
+  justify-content: center;
+}
+
+.register-container .registerbtn{
+  width: 70%;
+  height: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ebe8e8;
+  background-color: rgb(177,50,37);
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  transform: translateY(15px);
+}
+
+.register-container .registerbtn:hover{
+  background: black;
+  transition: 0.05s;
+  color: #eee;
+}
+
+.register-container .registerbtn:active{
+  transition: 0.15s;
+  background-color: #ebe8e8;
+  color: black;
 }
 
 .blur-overlay-about{
@@ -1401,3 +1513,4 @@ body{
     border-radius: var(--dl-radius-radius-radius8) ;
     border: none;
   }
+
