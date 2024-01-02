@@ -1514,3 +1514,13 @@ body{
     border: none;
   }
 
+  .top-line{
+    height: 1px;
+    background: rgb(145, 145, 145);
+  }
+
+  .bottom-line{
+    height: 1px;
+    background: (145,145,145);
+  }
+

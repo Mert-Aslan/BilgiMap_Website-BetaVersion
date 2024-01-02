@@ -7,8 +7,11 @@ export default function EnergyMuseum() {
         navigate("/");
     }
     return (
-        <div>
-            EnergyMuseum
+        <div class="blur-overlay-featurecard">
+            <div class="energymuseum-container">
+                
+            </div>
         </div>
+        
     )
 }
