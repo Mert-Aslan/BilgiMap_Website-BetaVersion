@@ -6,8 +6,13 @@ import energy_museum from "./logos/logo-energymuseum.png"
 import building_info from "./logos/logo-buildinginfo.png"
 import study_places from "./logos/logo-studyplaces.png"
 import food_drinks from "./logos/logo-fooddrinks.png"
+import { useNavigate } from "react-router-dom"
 
 export default function Body() {
+    const navigate = useNavigate();
+    
+    
+
     return (
         <>
             <div class="home-hero">
@@ -68,7 +73,11 @@ export default function Body() {
                             </span>
                         </div>
                         <div class="home-container04">
-                            <button class="btn-featurecard">
+                            <button class="btn-featurecard" onClick={() => {
+                                document.body.style.overflow = "hidden"
+                                navigate("/enery-museum")
+
+                            }}>
                                 <div class="feature-card-feature-card">
                                     <img src={energy_museum} class="logo-small" />
                                     <div class="feature-card-container">
@@ -79,7 +88,11 @@ export default function Body() {
                                 </div>
                             </button>
 
-                            <button class="btn-featurecard">
+                            <button class="btn-featurecard" onClick={() => {
+                                document.body.style.overflow = "hidden"
+                                navigate("/building-info")
+
+                            }}>
                                 <div class="feature-card-feature-card">
                                     <img src={building_info} class="logo-small" />
                                     <div class="feature-card-container">
@@ -89,7 +102,11 @@ export default function Body() {
                                     </div>
                                 </div>
                             </button>
-                            <button class="btn-featurecard">
+                            <button class="btn-featurecard" onClick={() => {
+                                document.body.style.overflow = "hidden"
+                                navigate("/study-places")
+
+                            }}>
                                 <div class="feature-card-feature-card">
                                     <img src={study_places} class="logo-small" />
                                     <div class="feature-card-container">
@@ -99,7 +116,11 @@ export default function Body() {
                                     </div>
                                 </div>
                             </button>
-                            <button class="btn-featurecard">
+                            <button class="btn-featurecard" onClick={() => {
+                                document.body.style.overflow = "hidden"
+                                navigate("/food-drinks")
+
+                            }}>
                                 <div class="feature-card-feature-card">
                                     <img src={food_drinks} class="logo-small" />
                                     <div class="feature-card-container">
