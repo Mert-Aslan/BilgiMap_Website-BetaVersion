@@ -9,7 +9,6 @@ export default function BuildingInfo() {
     }
     return (
         <div>
-            Building Info
         </div>
     )
 }

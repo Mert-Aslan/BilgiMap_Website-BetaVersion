@@ -28,7 +28,6 @@ export default function Navbar() {
           <nav class="home-links">
             <a class="home-nav1" href="#home" >Home</a>
             <a class="home-nav2" id="about-btn" href="/about" onClick={() => document.body.style.overflow = "hidden"}>About</a>
-            <a class="home-nav3">Campus Map</a>
             <a class="home-nav4" href="#features">Features</a>
             <a class="home-nav5" href="#contact">Contact</a>
           </nav>

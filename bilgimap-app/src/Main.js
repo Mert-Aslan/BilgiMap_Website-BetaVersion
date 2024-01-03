@@ -30,7 +30,6 @@ export default function Main(){
                 <Route path="/energy-museum" element = {<EnergyMuseum />}/>
                 <Route path="/food-drinks" element = {<FoodDrinks />}/>
                 <Route path="/study-places" element = {<StudyPlaces />}/>
-                
             </Routes>
             <Body />
             <LogoSection />
