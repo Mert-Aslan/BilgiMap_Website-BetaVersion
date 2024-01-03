@@ -10,7 +10,23 @@ const userSchema = new Schema(
             unique: true,
         },
         password: String,
-        calInfo: [String]
+        calInfo: [
+            {
+                name: {
+                    type: String,
+                },
+                date: {
+                    type: String,
+                },
+                description: {
+                    type: String,
+                },
+                type: {
+                    type: String,
+                    enum : ["holiday","event","birthday"],
+                },
+            }
+        ]
     }
 
 )

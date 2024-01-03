@@ -24,7 +24,7 @@ export default function Login() {
       }else{
         setData({})
         toast.success("Login succesful")
-        routeCange("/")
+        routeCange("/dashboard")
       }
     } catch (error) {
       console.log(error)

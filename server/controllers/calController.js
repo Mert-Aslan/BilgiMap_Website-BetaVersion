@@ -1,4 +1,5 @@
 const Calendar = require("../models/calendar")
+const User = require("../models/user")
 
 const assignToCalendar = async (req,res) => {
     try {
@@ -33,7 +34,7 @@ const assignToCalendar = async (req,res) => {
         }
         
         //create calendar event in Database
-        const calendar = Calendar.create({name,date,description,type})
+        const calendar = User.create({name,date,description,type})
         return res.json(calendar)
 
     } catch (error) {
@@ -45,7 +46,7 @@ const assignToCalendar = async (req,res) => {
 
 const bringEvent = async (req,res) => {
     try {
-        Calendar.find({}).then((recs) => {
+        User.find({}).then((recs) => {
             res.send(recs)
         })
     } catch (error) {
