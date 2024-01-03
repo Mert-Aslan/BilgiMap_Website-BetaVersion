@@ -20,9 +20,9 @@ export default function About() {
           <h1 class="h1-bilgiabout">About BILGI</h1>
           <h1 class="h1-mapabout">MAP</h1>
         </div>
-        <div class="content-container">
+        <div class="content-container-about">
           <p class="content-about">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Our website serves as a comprehensive digital guide for our university community. Central to its functionality is an interactive university map that offers detailed navigation of campus buildings, study areas, and restaurants. Beyond its navigational capabilities, the map enhances campus connectivity by integrating personalized elements. Registered users can customize their experience by setting reminders, leaving notes, and accessing tailored information relevant to their academic and extracurricular interests. This dynamic platform not only simplifies campus exploration but also fosters engagement through a user-centric approach, ensuring that every member of our community can maximize their university experience.
           </p>
         </div>
       </div>

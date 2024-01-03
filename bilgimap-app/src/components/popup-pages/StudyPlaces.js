@@ -32,7 +32,7 @@ export default function StudyPlaces() {
                             </div>
                             <div class="studyplaces-text-container">
                                 <p class="studyplaces-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                Our campus library is a spacious hub with a diverse book collection spanning various subjects. Beyond books, it's equipped with essential study tools like computers and offers multiple study areas. Students benefit from quiet zones for focused work and collaborative spaces for group projects, ensuring a conducive environment for academic success.
                                 </p>
                             </div>
                         </div>
@@ -47,7 +47,7 @@ export default function StudyPlaces() {
                             </div>
                             <div class="studyplaces-text-container">
                                 <p class="studyplaces-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                Our campus study hall spans multiple floors, each offering distinct study environments. The ground floor provides long tables for collaborative study, while the first floor features varied-capacity rooms for group work. The second floor offers silent individual study areas with divided tables, and the third floor combines small group rooms with communal tables, accommodating both quiet study and group interactions.
                                 </p>
                             </div>
                         </div>
@@ -62,7 +62,7 @@ export default function StudyPlaces() {
                             </div>
                             <div class="studyplaces-text-container">
                                 <p class="studyplaces-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                The E3 building on our campus serves as a hub for engineering students, featuring specialized classrooms and ample study spaces. Beyond academic areas, the building offers cozy couches, providing students with comfortable spots to rest and recharge between classes or study sessions, emphasizing both academic focus and relaxation.
                                 </p>
                             </div>
                         </div>

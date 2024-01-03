@@ -18,7 +18,7 @@ export default function FoodDrinks() {
         document.body.style.overflow = "auto"
         navigate("/");
     }
-
+    
     return (
         <div class="blur-overlay-popups">
             <div class="FoodDrinks-container">

@@ -11,7 +11,6 @@ export default function Login() {
     email: "",
     password: ""
   })
-
   const loginUser = async (e) => {
     e.preventDefault()
     const {email, password} = data
@@ -52,11 +51,9 @@ export default function Login() {
         </div>
         <h1>Login</h1>
         <form onSubmit={loginUser}>
-
           <div class="inputBox">
             <input type="email" placeholder="Mail" required value={data.email} onChange={(e) => setData({...data, email: e.target.value})} />
           </div>
-
           <div class="inputBox">
             <input type="password" placeholder="Password" required value={data.password} onChange={(e) => setData({...data, password: e.target.value})}/>
           </div>
@@ -66,14 +63,12 @@ export default function Login() {
               <input type="checkbox" class="login-checkbox" />Remember me
             </label>
           </div>
-
           <div class="forgot_btn">
             <a href="#">Forgot Password?</a>
           </div>
           <div class="loginbtn-container">
             <button type="submit" class="loginbtn">Login</button>
           </div>
-
           <div class="register_link">
             <p>Don't have an account?<a href='/register'>Register</a></p>
           </div>
