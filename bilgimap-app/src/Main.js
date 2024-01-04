@@ -33,7 +33,7 @@ export default function Main(){
                 <Route path="/food-drinks" element = {<Home_FoodDrinks />}/>
                 <Route path="/study-places" element = {<Home_StudyPlaces />}/>
                 <Route path="/dashboard" element = {<Dashboard />} />
-                <Route path="/calendar" element = {<ReactBigCalendar/>} />
+                <Route path="/calendar" element = {<Calendar/>} />
             </Routes>
                
         </BrowserRouter>
