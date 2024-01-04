@@ -32,7 +32,7 @@ export default function BuildingInfo() {
                                     </div>
                                 <div class="buildinginfo-context-container">
                                     <p class="buildinginfo-context">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Within the E1 building, artistry thrives as it hosts the Faculty of Visual Communication Design alongside the Department of Music, blending design narratives with musical melodies on campus.
                                     </p>
                                 </div>
                             </div>
@@ -49,7 +49,7 @@ export default function BuildingInfo() {
                                     </div>
                                 <div class="buildinginfo-context-container">
                                     <p class="buildinginfo-context">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    The E2 building stands prominently as a cornerstone for the Faculty of Social Sciences and Humanities, seamlessly merging academic excellence with a rich tapestry of cultural and intellectual engagement.
                                     </p>
                                 </div>
                             </div>
@@ -67,7 +67,7 @@ export default function BuildingInfo() {
                                     </div>
                                 <div class="buildinginfo-context-container">
                                     <p class="buildinginfo-context">
-                                    The E3 building on our campus serves as a hub for engineering students, featuring specialized classrooms and ample study spaces. Beyond academic areas, the building offers cozy couches, providing students with comfortable spots to rest and recharge between classes or study sessions, emphasizing both academic focus and relaxation.
+                                    The E3 building is a focal point for engineering and natural sciences, promoting innovation and academic excellence through advanced facilities and interdisciplinary collaboration.
                                     </p>
                                 </div>
                             </div>
@@ -84,7 +84,7 @@ export default function BuildingInfo() {
                                     </div>
                                 <div class="buildinginfo-context-container">
                                     <p class="buildinginfo-context">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    At the heart of our campus, the E4 building stands as a nexus for media and communication, blending state-of-the-art resources with a focus on nurturing the next generation of media professionals and communicators.
                                     </p>
                                 </div>
                             </div>
@@ -118,7 +118,7 @@ export default function BuildingInfo() {
                                     </div>
                                 <div class="buildinginfo-context-container">
                                     <p class="buildinginfo-context">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    The ÇSM building on campus combines academics and culture, featuring a study hall, classrooms, and the Energy Museum. Additionally, a cozy café offers students a space for relaxation and socializing, making it a versatile hub for learning and leisure.
                                     </p>
                                 </div>
                             </div>

@@ -26,6 +26,7 @@ html {
   scroll-behavior: smooth;
 }
 
+
 body {
   margin: 0;
 }
@@ -1021,6 +1022,26 @@ body {
   background-color: var(--dl-color-gray-white);
 }
 
+
+.home-navbar-interactive-loggedin{
+  width: 90%;
+  border: rgb(177, 50, 37);
+  border-width: 1px;
+  border-style: groove;
+  display: flex;
+  position: relative;
+  z-index: 1;
+  max-width: var(--dl-size-size-maxwidth);
+  align-items: center;
+  padding-top: var(--dl-space-space-oneandhalfunits);
+  padding-left: var(--dl-space-space-threeunits);
+  border-radius: 50px;
+  padding-right: var(--dl-space-space-threeunits);
+  padding-bottom: var(--dl-space-space-oneandhalfunits);
+  justify-content: space-between;
+  background-color: var(--dl-color-gray-white);
+}
+
 .home-desktop-menu {
   flex: 1;
   display: flex;
@@ -1336,7 +1357,6 @@ body {
   max-width: var(--dl-size-size-maxwidth);
   min-height: auto;
   align-items: center;
-  padding-top: var(--dl-space-space-sixunits);
   padding-left: var(--dl-space-space-threeunits);
   padding-right: var(--dl-space-space-threeunits);
   flex-direction: column;
@@ -2315,4 +2335,283 @@ body {
 .phone-logo {
   width: 80%;
   height: 80%;
+}
+
+.dropdown-profile-btn{
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.home-buttons-loggedin{
+  display: flex;
+  flex-direction: row;
+  margin-right: 4vh;
+}
+
+.profile-img-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img{
+  width: 60%;
+  height: 60%;
+}
+
+.dropdown-button-container{
+  width: 5.5vh;
+  height: 5.5vh;
+  
+}
+
+.dropdown-button{
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  height: 100%;
+  background: var(--dl-color-gray-white);
+}
+
+.dropdown-label-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown-label{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.dropdown-text{
+  font-family: Roboto;
+  justify-content: center;
+  text-align: center;
+}
+
+.logo-dropdown-container{
+  width: 40%;
+  height: 1.7vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-dropdown{
+height: 100%;
+width: 100%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 20vh;
+  min-height: 16vh;
+  border-radius: 25px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  font-size: 2vh;
+  color: black;
+  font-family: Roboto;
+  text-decoration: none;
+}
+
+.dropdown-fullName-container{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.dropdown-universityname-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.universityname-logo{
+  width: 20%;
+  height: 100%;
+}
+
+.btn-logout-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 4.6vh;
+}
+
+.btn-logout{
+  font-size: 4vh;
+}
+
+ .btn-logout-container:hover {background-color: #ddd;}
+
+.dropdown-profile:hover .dropdown-content {display: block;}
+
+.home-nav-calendar{
+  margin-right: 4.5vh;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
+
+.home-nav-campusmap{
+  margin-right: 4.5vh;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
+
+
+.home-nav-calendar:hover {
+  transition: 0.3s;
+  color: rgb(177, 50, 37);
+}
+
+.home-nav-campusmap:hover {
+  transition: 0.3s;
+  color: rgb(177, 50, 37);
+}
+
+.dashboard{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.welcoming-msg-container-container{
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  text-align: center;
+  padding-top: 3vh;
+  margin-left: 5vh;
+}
+
+.welcoming-msg-container{
+  background-color: #fff;
+  border-radius: 15px;
+  margin-left: 1.5vh;
+  padding: 1.5vh; 
+  padding-top: 0vh;
+  padding-bottom: 0vh;
+}
+
+.welcomeing-msg{
+  color: black;
+  font-size: 4.5vh;
+}
+
+.map-section{
+  width: 100%;
+  min-height: 90vh;
+}
+
+.whole-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.mapbutton-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+
+.mapbutton-currentloc{
+  cursor: pointer;
+  width: 100%;
+  border-radius: 12px;
+  height:100%;
+  color: white;
+  background: rgb(177, 50, 37);
+  outline: solid;
+  outline-color: black;
+}
+
+.mapbutton-destination{
+  cursor: pointer;
+  width: 100%;
+  border-radius: 12px;
+  height: 100%;
+  color: white;
+  outline: solid;
+  outline-color: black;
+  background: rgb(177, 50, 37);
+}
+
+.mapbutton-currentloc:hover{
+  box-shadow: 5px 5px 1px black;
+}
+
+
+.mapbutton-destination:hover{
+  box-shadow: 5px 5px 1px black;
+}
+
+
+
+.map{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-right: 5vh;
+}
+
+.button-container{
+  width: 35%;
+}
+
+.map-container{
+  width: 65%;
+  height: 100%;
+}
+
+.mapbutton-dropdown{
+  position: relative;
+  display: inline-block;
+  width: 60%;
+  height: 15%;
+}
+
+.mapbutton-dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: rgb(177, 50, 37);
+    color: black;
+    min-width: 100%;
+    border-radius: 13px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.mapbutton-dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.mapbutton-dropdown-content a:hover{
+  background-color: white;
+}
+
+.mapbutton-dropdown:hover .mapbutton-dropdown-content{
+  display: block;
 }
