@@ -28,10 +28,10 @@ export default function Body() {
                             Navigate BILGI university with ease
                         </span>
                         <div class="home-btn-group">
-                            <button class="home-hero-button1 button">Get Started</button>
-                            <p class="home-hero-button2 button" >
+                            <a class="home-hero-button1 button" href="/login">Get Started</a>
+                            <a class="home-hero-button2 button" href="/guest">
                                 Continue as a guest &#8594;
-                            </p>
+                            </a>
                         </div>
                     </div>
                 </div>

@@ -12,6 +12,8 @@ import Home_StudyPlaces from "./pages/Home_StudyPlaces"
 import Dashboard from "./pages/Dashboard"
 import Home from "./pages/Home"
 import ReactBigCalendar from "./calendar/ReactBigCalendar"
+import Calendar from "./pages/Calendar.js"
+import GuestPage from "./pages/GuestPage.js"
 
 
 axios.defaults.baseURL = "http://localhost:8000/"
@@ -34,6 +36,7 @@ export default function Main(){
                 <Route path="/study-places" element = {<Home_StudyPlaces />}/>
                 <Route path="/dashboard" element = {<Dashboard />} />
                 <Route path="/calendar" element = {<Calendar/>} />
+                <Route path="/guest" element = {<GuestPage />} />
             </Routes>
                
         </BrowserRouter>

@@ -1412,6 +1412,7 @@ body {
   padding-bottom: 1.5rem;
   background-color: white;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .home-hero-button1:hover {

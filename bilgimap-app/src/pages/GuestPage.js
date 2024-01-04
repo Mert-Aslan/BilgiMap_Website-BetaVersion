@@ -1,10 +1,8 @@
+import Navbar from "../components/Navbar";
 import { UserContext } from "../context/userContext";
 import { useContext, useState } from "react"
 import { useNavigate } from "react-router-dom"
 import "../components/Common.css"
-import img_defaultuser from "../components/img/img-defaultuser.png"
-import logo_dropdown from "../components/logos/logo-dropdown.png"
-import logo_bilgiuni from "../components/logos/logo-bilgiuni.png"
 import Footer from "../components/Footer";
 import LogoSection from "../components/LogoSection";
 import logo_website from "../components/logos/logo-website.png"
@@ -23,9 +21,9 @@ import e3_gastro from "../maps/img-maps/img-e3-gas.png"
 
 import csm_gastro from "../maps/img-maps/img-csm-gas.png"
 
+export default function GuestPage() {
 
-export default function Dashboard() {
-    let current, destionation;
+    let current;
 
     const [imageSrc, setImageSrc] = useState(origin_map);
 
@@ -33,91 +31,57 @@ export default function Dashboard() {
         setImageSrc(path);
     };
 
-    const { user } = useContext(UserContext)
     const navigate = useNavigate()
     const routeCange = (path) => {
         navigate(path)
     }
 
     return (
-        <><div class="home-header">
-            <div id="home"></div>
-            <header data-thq="thq-navbar" class="home-navbar-interactive-loggedin">
-                <div data-thq="thq-navbar-nav" class="home-desktop-menu">
-                    <a class="logo-container" href="#home">
-                        <span class="home-logo-bilgi">
-                            <span>BILGI</span>
-                            <br />
-                        </span>
-                        <span class="home-logo-map">
-                            <span>MAP</span>
-                            <br />
-                        </span>
-                    </a>
-                    <nav class="home-links">
-                        <a class="home-nav-calendar" href="/calendar">Calendar</a>
-                        <a class="home-nav-campusmap" href="#campus">Campus Map</a>
-                        <a class="home-nav5" href="#contact">Contact</a>
-                    </nav>
-                    <div class="home-buttons-loggedin">
-                        <div class="dropdown-profile">
-                            <div class="dropdown-button-container">
-                                <button class="dropdown-button">
-                                    <div class="profile-img-container">
-                                        <img
-                                            class="profile-img"
-                                            src={img_defaultuser} />
-                                    </div>
-                                    <div class="dropdown-label-container">
-                                        <div class="dropdown-label">
-                                            <div class="dropdown-text">
-                                                <span>
-                                                    Me
-                                                </span>
-                                            </div>
-                                            <div class="logo-dropdown-container">
-                                                <img
-                                                    class="logo-dropdown"
-                                                    src={logo_dropdown} />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </button>
-                            </div>
-                            <div class="dropdown-content">
-                                <div class="studentinfo-container">
-                                    <div class="dropdown-fullName-container">
-                                        <a class="dropdown-fullName">
-                                            {!!user && (<p>{user.name} {user.lastname}</p>)}
-                                        </a>
-                                    </div>
-                                    <div class="dropdown-universityname-container">
-                                        <img
-                                            class="universityname-logo"
-                                            src={logo_bilgiuni} />
-                                        <a class="dropdown-universityname">
-                                            Istanbul Bilgi University
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="btn-logout-container">
-                                    <a class="btn-logout" href="/">
-                                        Log out
-                                    </a>
-                                </div>
-                            </div>
+        <>
+            <div class="home-header">
+                <div id="home"></div>
+                <header data-thq="thq-navbar" class="home-navbar-interactive-loggedin">
+                    <div data-thq="thq-navbar-nav" class="home-desktop-menu">
+                        <a class="logo-container" href="#home">
+                            <span class="home-logo-bilgi">
+                                <span>BILGI</span>
+                                <br />
+                            </span>
+                            <span class="home-logo-map">
+                                <span>MAP</span>
+                                <br />
+                            </span>
+                        </a>
+                        <nav class="home-links">
+                            <a class="home-nav1" href="#home" >Home</a>
+                            <a class="home-nav2" id="about-btn" href="/about" onClick={() => document.body.style.overflow = "hidden"}>About</a>
+                            <a class="home-nav4" href="#features">Features</a>
+                            <a class="home-nav5" href="#contact">Contact</a>
+                        </nav>
+                        <div class="home-buttons">
+                            <button class="home-login" onClick={() => {
+                                document.body.style.overflow = "hidden"
+                                routeCange("/login")
+
+                            }}>Login
+                            </button>
+
+                            <button class="home-register" onClick={() => {
+                                document.body.style.overflow = "hidden"
+                                routeCange("/register")
+                            }}>Register</button>
+
                         </div>
                     </div>
-                </div>
-            </header>
-        </div>
 
+                </header>
+            </div>
 
             <div class="home-hero">
                 <div class="home-hero1">
                     <div class="welcoming-msg-container-container">
                         <div class="welcoming-msg-container">
-                            {!!user && (<h1 class="welcoming-msg"> Welcome {user.name}!</h1>)}
+                            <h1 class="welcoming-msg"> Welcome to Guest Page!</h1>
                         </div>
                     </div>
                     <img
@@ -159,7 +123,7 @@ export default function Dashboard() {
                                     Destination
                                 </button>
                                 <div class="mapbutton-dropdown-content">
-                                    <a class="mapbutton-dropdown-content-element" id="d-e1"onClick={() => {
+                                    <a class="mapbutton-dropdown-content-element" id="d-e1" onClick={() => {
                                         switch (current) {
                                             case "e2":
                                                 changeImage(e1_e2)
@@ -256,9 +220,4 @@ export default function Dashboard() {
             <LogoSection />
             <Footer /></>
     )
-
-}
-
-function pathFinder() {
-
 }
