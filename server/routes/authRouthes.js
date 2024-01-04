@@ -2,7 +2,7 @@ const express = require("express")
 const router = express.Router()
 const cors = require("cors")
 const {test, registerUser, loginUser, getProfile}  = require("../controllers/authControlles")
-const {bringEvent, assignToCalendar} = require("../controllers/calController.js")
+const {getEvents, assignToCalendar} = require("../controllers/calController.js")
 
 //middlewate
 router.use(
@@ -17,7 +17,7 @@ router.post("/login", loginUser)
 router.post("/register",registerUser)
 router.get("/profile", getProfile)
 
-router.get("/calendar", bringEvent)
+router.get("/events", getEvents)
 router.post("/create-event", assignToCalendar)
 
 

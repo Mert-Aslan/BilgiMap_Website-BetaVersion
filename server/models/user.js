@@ -1,6 +1,27 @@
 const mongoose = require("mongoose")
 const { Schema } = mongoose
 
+const events = new Schema(
+    {
+        events: [
+            {
+                id: {
+                    type: Number,
+                },
+                title: {
+                    type: String,
+                },
+                start: {
+                    type: Date,
+                },
+                end: {
+                    type: Date,
+                },
+            }
+        ]
+}
+)
+
 const userSchema = new Schema(
     {
         name: String,
@@ -10,23 +31,6 @@ const userSchema = new Schema(
             unique: true,
         },
         password: String,
-        calInfo: [
-            {
-                name: {
-                    type: String,
-                },
-                date: {
-                    type: String,
-                },
-                description: {
-                    type: String,
-                },
-                type: {
-                    type: String,
-                    enum : ["holiday","event","birthday"],
-                },
-            }
-        ]
     }
 
 )

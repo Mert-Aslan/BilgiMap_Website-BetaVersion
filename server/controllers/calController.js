@@ -1,4 +1,4 @@
-const Calendar = require("../models/calendar")
+
 const User = require("../models/user")
 
 const assignToCalendar = async (req,res) => {
@@ -44,17 +44,19 @@ const assignToCalendar = async (req,res) => {
 
 //bring event records
 
-const bringEvent = async (req,res) => {
-    try {
-        User.find({}).then((recs) => {
-            res.send(recs)
+const getEvents = async (req,res) => {
+    const {token} = req.cookies
+    if(token) {
+        jwt.verify(token, process.env.JWT_SECRET,{}, (err,user) => {
+            if(err) throw err;
+            res.json(user)
         })
-    } catch (error) {
-        console.log(error)
+    }else {
+        res.json(null)
     }
 }
 
 module.exports = {
-    bringEvent,
+    getEvents,
     assignToCalendar
 }
