@@ -34,7 +34,7 @@ export default function Footer() {
               />
             </div>
             <div class="phone-label-container">
-              <a class="phone-label">+90 530 822 0904</a>
+              <a class="phone-label">+00 000 000 0000</a>
             </div>
           </div>
         </div>

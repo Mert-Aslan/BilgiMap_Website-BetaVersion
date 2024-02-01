@@ -1009,7 +1009,7 @@ body {
   border-width: 1px;
   border-style: groove;
   display: flex;
-  position: fixed;
+  position: relative;
   z-index: 1;
   max-width: var(--dl-size-size-maxwidth);
   align-items: center;
